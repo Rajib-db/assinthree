@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+          background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Mouseover Example</h1>
+    <p>Move the mouse over the image to change its source.</p>
+    <img id="myImage" src="./img/img2.jpg" onmouseover="changeImageSource()" onmouseout="restoreImageSource()" alt="Image">
+    <br><br><br>
+    <p id="myParagraph">This is a paragraph.</p>
+    <button onclick="changeText()">Click me</button>
+
+    <br><br><br>
+    <!-- <h1>Button and Paragraph Example</h1> -->
+    <button id="myButton">Click me!</button>
+    <p id="myText">This is a paragraph.</p>
+
+    <br><br><br>
+    <!-- Dynamic List Example -->
+    <ul id="myList"></ul>
+    <br><br><br>
+
+    <!-- Image Element Example -->
+    <img id="myPic" src="./img/img2.jpg" alt="Initial Image">
+    <br>
+    <button id="changeButton">Change Image</button>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

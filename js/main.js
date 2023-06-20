@@ -206,9 +206,81 @@
 //     }
 
 // 12.DOM Change Attribute Value:
-var image = document.getElementById('myPic');
-var button = document.getElementById('changeButton');
+// var image = document.getElementById('myPic');
+// var button = document.getElementById('changeButton');
 
-button.addEventListener('click', function() {
-  image.src = "./img/img1.jpg";
-});
+// button.addEventListener('click', function() {
+//   image.src = "./img/img1.jpg";
+// });
+
+// 13.DOM Query Selector:
+// function changeTextColor() {
+//   var paragraphs = document.querySelectorAll('.custom-class');
+//   for (var i = 0; i < paragraphs.length; i++) {
+//     paragraphs[i].style.color = 'red';
+//   }
+// }
+
+// // Call the function to change the text color
+// changeTextColor();
+
+// 14.AJAX Get Request:
+// function sendGetRequest() {
+//   var xhr = new XMLHttpRequest();
+  
+//   xhr.open('GET', 'https://api.example.com/data', true);
+  
+//   xhr.onload = function() {
+//     if (xhr.status === 200) {
+//       var responseData = JSON.parse(xhr.responseText);
+//       // Process the response data here
+//       console.log(responseData);
+//     } else {
+//       console.error('Request failed with status:', xhr.status);
+//     }
+//   };
+  
+//   xhr.onerror = function() {
+//     console.error('An error occurred while sending the request.');
+//   };
+  
+//   xhr.send();
+// }
+
+// // Call the function to send the GET request
+// sendGetRequest();
+
+// 15.AJAX Post Request:
+// function sendPostRequest() {
+//   // Create a new XMLHttpRequest object
+//   var xhr = new XMLHttpRequest();
+
+//   // Prepare the request
+//   xhr.open("POST", "https://api.example.com/submit", true);
+//   xhr.setRequestHeader("Content-Type", "application/json");
+
+//   // Set up the callback function to handle the response
+//   xhr.onload = function() {
+//     if (xhr.status === 200) {
+//       console.log("Request successful");
+//       console.log(xhr.responseText);
+//     } else {
+//       console.log("Request failed with status code " + xhr.status);
+//     }
+//   };
+
+//   // Create the data to be sent in the request
+//   var data = {
+//     name: "John Doe",
+//     email: "johndoe@example.com"
+//   };
+
+//   // Convert the data to a JSON string
+//   var jsonData = JSON.stringify(data);
+
+//   // Send the request
+//   xhr.send(jsonData);
+// }
+
+// // Call the function to send the POST request
+// sendPostRequest();
